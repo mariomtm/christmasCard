@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/christmascard"
+        android:scaleType="centerCrop"/>
+
+    <TextView android:id="@+id/tv_feliz_navidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feliz Navidad"
+        android:textColor="#FF0000"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Que tus segundos se llenen de magia, tus minutos de risa y tus horas de amor. Que en tu corazón crezcan la alegría, la paz y la esperanza."
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_feliz_navidad"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
